@@ -1,1 +1,1 @@
-Link do jogo no itchItch.io: https://mistapaulo.itch.io/spaceatwar
+Link do jogo no Itch.io: https://mistapaulo.itch.io/spaceatwar
