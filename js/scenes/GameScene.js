@@ -40,8 +40,34 @@ class GameScene extends Phaser.Scene {
   }
 
   create() {
-    // Reset score when a new game starts
+    // Resets values when starting
+    this.enemySpawnTime = 0
+    this.shield
+    this.shieldActive = false
+    this.shieldPercentage = 100
+    this.healthPercentage = 100
+    this.shieldCooldown = false
     this.score = 0
+    this.enemySpawnCount = 0
+    this.spawnCooldown = false
+    this.shieldCooldownThreshold = 30
+    this.maxEnemies = 10
+    this.enemySpawnInterval = 1000
+    this.playerBulletDamage = 25
+    this.enemyBullet1Damage = 5
+    this.enemyBullet2Damage = 10
+    this.enemy1Health = 25
+    this.enemy2Health = 500
+    this.shieldRegenerationRate = 5
+    this.enemy1ShootCooldown = 1250
+    this.enemy2ShootCooldown = 2500
+    this.enemy2SprayDuration = 1250
+    this.enemy2SprayInterval = 75
+    this.enemy1MoveSpeed = 100
+    this.enemy2MoveSpeed = 25
+    this.enemyShootStartDelay = 500
+    this.healthBoosterDuration = 5000
+    this.lastFired = 0
   
     // Add background
     this.add.image(400, 300, 'background')
