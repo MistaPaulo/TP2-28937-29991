@@ -41,6 +41,7 @@ class GameScene extends Phaser.Scene {
 
   create() {
     // Resets values when starting
+    this.isFiring = false
     this.enemySpawnTime = 0
     this.shield
     this.shieldActive = false
